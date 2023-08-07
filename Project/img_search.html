@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="Fav.Icon/icon-Google.png" type="image/x-icon">
+        <title>Project 0</title>
+        <style>
+            body{
+                background-color: white;
+                font-family:'Roboto', sans-serif;
+            }
+            #links{
+                float: right;
+                padding: 6px;
+                text-align: right;
+            }
+            .link{
+                text-decoration: none;
+                color: black;
+                font-size: 16px;
+                padding: 6px;
+            }
+            .link:hover{
+                text-decoration:underline;
+            }
+            #container{
+                padding-top: 130px;
+                margin: 10px;
+                text-align: center;
+            }
+            #Logo-Google-image{
+                width: 300px;
+                text-align: center;
+            }
+            #search{
+                text-align: center;
+                padding:15px ;
+            }
+            #form{
+                width: 40%;
+                padding: 12px;
+                font-size: 16px;
+                border-radius: 20px;
+                padding-left: 18px;
+                border:1px solid #ccc;
+            }
+            #form:hover{
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+            }
+            .submit{
+                margin-top: 25px;
+                padding: 10px;
+                border: none;
+                margin-right: 10px;
+            }
+            .submit:hover{
+                border: solid 1px;
+                border-color:lavender;
+            }
+            @media (max-width:1023px){
+                #form{
+                    width: 50%;
+                    font-size: 15px;
+                }
+            }
+            @media (max-width: 767px){
+                #form{
+                    width: 65%;
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="links">
+            <a class="link" href="Index.html">Back to Search</a>
+            </div>
+        </header>    
+        <div id="container">
+            <img id="Logo-Google-image" src="Images/logo-Google-images.png" alt="Google-images-logo">
+            <div id="search">
+                <form action="https://google.com/images">
+                    <input id="form" type="text" name="q" placeholder="Search Google or type a URL">
+                    <div id="buttons">
+                        <input class="submit" type="submit" value="Google search">
+                        <input class="submit" type="submit" value="I’m Feeling Lucky">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
